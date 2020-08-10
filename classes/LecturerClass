@@ -1,0 +1,13 @@
+
+import pandas as pd
+
+class LecturerClass:
+
+    def __init__(self, data):
+        self.idLecturer = data.idLecturer
+        self.name = data.Name
+
+
+lecturer = LecturerClass(pd.read_excel("TimeTableProblem_B.xlsx", sheet_name="Lecturer"))
+
+#print (lecturer.name)
